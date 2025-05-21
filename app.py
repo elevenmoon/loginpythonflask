@@ -4,9 +4,9 @@ from flask_mysqldb import MySQL, MySQLdb
 
 app = Flask(__name__, template_folder='template')
 
-app.config['MYSQL_HOST']='localhost'
-app.config['MYSQL_USER']='root'
-app.config['MYSQL_PASWOORD']=''
+app.config['MYSQL_HOST']='sql.freedb.tech'
+app.config['MYSQL_USER']='freedb_cvgomez17'
+app.config['MYSQL_PASSWORD']='@EY%Qh8Ym3W$R$7'
 app.config['MYSQL_DB']='freedb_condipastel'
 app.config['MYSQL_CURSORCLASS']='DictCursor'
 
@@ -40,4 +40,4 @@ def login():
 
 if __name__ == '__main__':
     app.secret_key = 'roman_hds'
-    app.run(debug=True, host='0.0.0.0', port=5000, threaded=True)
+    app.run(debug=True, host='0.0.0.0', port=3306, threaded=True)
